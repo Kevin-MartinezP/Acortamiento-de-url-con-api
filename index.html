@@ -8,11 +8,23 @@
   <link rel="stylesheet" href="/assets/css/estilos.css">
 </head>
 <body>
-  <header>
+  <nav class="menu-navegacion-principal">
     <img src="/images/logo.svg" alt="">
-
+    <div class="menu-navegacion-desktop-contenedor inactive">
+      <div class="contenedor-menu-desktop">
+        <ul class="lista-menu-desktop">
+          <li><a href="">Features</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Resources</a></li>
+        </ul>
+      </div>
+      <div class="menu-botones-desktop">
+        <button class="boton-acceso-desktop">Login</button>
+        <button class="boton-inscribirse-desktop">Sign Up</button>
+      </div>
+    </div>
     <img class="menu-movil-boton" src="/images/icon-menu.svg" alt="botón de menú movíl">
-  </header>
+  </nav>
 
   <nav class="menu-movil-contenedor inactive">
     <ul class="lista-menu-movil">
@@ -26,10 +38,11 @@
     </div>
   </nav>
 
-  <section class="shorter-container">
+  <header class="shorter-container">
     <div class="shorter-informacion-container">
       <div class="shorter-informacion_ilustracion">
         <img class="shorter-ilustracion" src="/images/illustration-working.svg" alt="ilustración de la seccion para acortar urls">
+        
       </div>
       <div class="shorter-informacion_texto">
         <h1>More than just shorter links</h1>
@@ -38,7 +51,8 @@
       </div>
     </div>
    
-  </section>
+  </header>
+
   <section class="contenedor-estadisticas">
 
     <form class="shorter-contenedor-link">
@@ -90,7 +104,7 @@
     </div>
     <nav class="footer-navegacion">
       <div class="footer-logo"><img src="/images/logo-blanco.svg" alt=""></div>
-      <div>
+      <div class="footer-listas">
         <ul class="lista-caracteristicas">
           <li class="item-primario">Features</li>
           <li><a href="#">Link Shortening</a></li>
