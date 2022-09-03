@@ -121,10 +121,11 @@ body {
   background-color: hsl(225deg, 33%, 95%);
   padding-bottom: 50px;
   text-align: center;
+  padding-top: 25%;
 }
 .contenedor-estadisticas .agregar-urls-acortados {
   width: 100%;
-  padding-top: 900px;
+  height: auto;
 }
 .contenedor-estadisticas .agregar-urls-acortados .url-acortado {
   display: grid;
@@ -152,23 +153,11 @@ body {
   word-break: break-all;
 }
 .contenedor-estadisticas .agregar-urls-acortados .url-acortado .copiar-link-boton {
-  width: 90%;
+  width: 100%;
   height: 40px;
   align-items: center;
   margin-bottom: 10px;
   background-color: hsl(180deg, 66%, 49%);
-  border: none;
-  border-radius: 5px;
-  color: #FFFFFF;
-  font-weight: bold;
-  cursor: pointer;
-}
-.contenedor-estadisticas .agregar-urls-acortados .url-acortado .borrar-link-boton {
-  width: 90%;
-  height: 40px;
-  align-items: center;
-  margin-bottom: 10px;
-  background-color: hsl(0deg, 87%, 67%);
   border: none;
   border-radius: 5px;
   color: #FFFFFF;
@@ -210,6 +199,8 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .contenedor-estadisticas .shorter-contenedor-link .parrafo-input-vacio {
+  text-align: left;
+  padding-left: 10px;
   font-size: 12px;
   color: hsl(0deg, 87%, 67%);
 }
@@ -469,7 +460,7 @@ footer .footer-navegacion .lista-redes-sociales {
     background-color: hsl(180deg, 66%, 69%);
   }
   .contenedor-estadisticas {
-    padding: 0 10% 10% 10%;
+    padding: 50px 10% 10% 10%;
   }
   .contenedor-estadisticas .shorter-contenedor-link {
     display: flex;
@@ -495,11 +486,18 @@ footer .footer-navegacion .lista-redes-sociales {
     padding: 0 20% 0 20%;
   }
   .contenedor-estadisticas .agregar-urls-acortados {
-    padding-top: 5%;
+    height: auto;
   }
   .contenedor-estadisticas .agregar-urls-acortados .url-acortado {
     display: flex;
+    justify-content: space-between;
     width: 100%;
+  }
+  .contenedor-estadisticas .agregar-urls-acortados .url-acortado .copiar-link-boton:hover {
+    background-color: hsl(180deg, 66%, 69%);
+  }
+  .contenedor-estadisticas .agregar-urls-acortados .url-acortado .borrar-link-boton:hover {
+    background-color: hsl(0deg, 87%, 75%);
   }
   .contenedor-estadisticas .agregar-urls-acortados .url-acortado .parrafo-link-original {
     width: 60%;
@@ -514,13 +512,7 @@ footer .footer-navegacion .lista-redes-sociales {
     align-self: center;
     width: 10%;
     margin: 0;
-    margin-right: 1%;
-  }
-  .contenedor-estadisticas .agregar-urls-acortados .url-acortado .borrar-link-boton {
-    align-self: center;
-    width: 10%;
-    margin: 0;
-    margin-right: 1%;
+    margin-right: 0.5%;
   }
   .contenedor-estadisticas .menu-estadisticas {
     display: flex;
@@ -593,6 +585,7 @@ footer .footer-navegacion .lista-redes-sociales {
   footer .footer-navegacion .lista-redes-sociales {
     flex-direction: column;
     padding-top: 0;
+    row-gap: 5px;
   }
   footer .footer-navegacion .footer-listas {
     width: 70%;
